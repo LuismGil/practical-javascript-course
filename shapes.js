@@ -1,62 +1,35 @@
 // Square code
-console.group('Squares');
 
-const squareSide = 5;
-console.log('The sides of the square measure: ' + squareSide + 'cm');
+function squarePerimeter(side) {
+  return side * 4;
+} 
 
-const squarePerimeter = squareSide * 4;
-console.log('The perimetes of the square is: ' + squarePerimeter + 'cm');
-
-const squareArea = squareSide * squareSide;
-console.log('The area of the square is: ' + squareArea + 'cm^2');
-
-console.groupEnd();
+function squareArea(side) {
+  return side * side;
+}
 
 // Triangle code
-console.group('Triangles');
 
-const triangleSide1 = 6;
-const triangleSide2 = 6;
-const triangleBase = 4;
+function trianglePerimeter(side1, side2, base) {
+  return side1 + side2 + base;
+};
 
-console.log(
-  'The sides of the triangle measure: '
-  + triangleSide1
-  + 'cm, '
-  + triangleSide2
-  + 'cm, '
-  + triangleBase
-  + 'cm'
-);
-
-const triangleHeight = 5.5;
-console.log('The height of triangle is: ' + triangleHeight + 'cm');
-
-const trianglePerimeter = triangleSide1 + triangleSide2 + triangleBase;
-console.log('The perimeter of the triangle is: ' + trianglePerimeter + 'cm');
-
-const triangleArea = (triangleBase * triangleHeight) / 2;
-console.log('The area of the triangle is: ' + triangleArea + 'cm^2');
-
-console.groupEnd();
+function triangleArea(base, height) {
+  return (base * height) / 2;
+}
 
 // Circle code
-
-console.group('Circles');
-
-const circleRadius = 4;
-console.log('The radius of the circle is: ' + circleRadius + 'cm');
-
-const circleDiameter = circleRadius * 2;
-console.log('The diameter of the circle is: ' + circleDiameter + 'cm');
-
 const PI = Math.PI;
-console.log('PI is: ' + PI);
 
-const circlePerimeter = circleDiameter * PI;
-console.log('The perimeter of the circle is: ' + circlePerimeter + 'cm');
+function circleDiameter(radius) {
+  return radius * 2;
+}
 
-const circleArea = (circleRadius * circleRadius) * PI;
-console.log('The area of the circle is: ' + circleArea + 'cm^2');
+function circlePerimeter(radius) {
+  const diameter = circleDiameter(radius);
+  return diameter * PI;
+}
 
-console.groupEnd();
+function circleArea(radius) {
+  return (radius * radius) * PI;
+}
