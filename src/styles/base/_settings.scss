@@ -1,0 +1,9 @@
+// Variables Styles
+
+$primary: #B3C2F2;
+$secundary: #735CDD;
+$white: #ffffff;
+$black: #000000;
+$error: #da1b22;
+$color-background: mix($white, $primary, 95%) !default;
+$color-text: scale-color($color-background, $lightness: -65%) !default;

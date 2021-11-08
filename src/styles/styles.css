@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+* {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62%;
+}
+
+body {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fbfcfe;
+  color: #23478d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  height: 100vh;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main {
+  -webkit-backdrop-filter: blur(200px);
+          backdrop-filter: blur(200px);
+  background-color: rgba(255, 255, 255, 0.35);
+  border-radius: 9px;
+  -webkit-box-shadow: 0 32px 80px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 32px 80px rgba(0, 0, 0, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-filter: blur();
+          filter: blur();
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+  width: 1000px;
+}
+
+.geometric {
+  text-align: center;
+}
+
+.geometric__title {
+  font-size: 24px;
+}
+
+.geometric__subtitle {
+  font-size: 17px;
+  line-height: 32px;
+}
+/*# sourceMappingURL=styles.css.map */

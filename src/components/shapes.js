@@ -1,4 +1,16 @@
+const input = document.getElementById('squareInput')
+const value = input.value;
+
 // Square code
+
+const btn = document.getElementById('btnSquare');
+
+btn.addEventListener('click',function() {
+  const perimeter = squarePerimeter(value);
+  const area = squareArea(value);
+  console.log('Perimetro => ' + perimeter + ' Area => ' + area);
+})
+
 
 function squarePerimeter(side) {
   return side * 4;

@@ -1,0 +1,23 @@
+{
+  "name": "practical-javascript-course",
+  "version": "1.0.0",
+  "description": "",
+  "main": "shapes.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuismGil/practical-javascript-course.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LuismGil/practical-javascript-course/issues"
+  },
+  "homepage": "https://github.com/LuismGil/practical-javascript-course#readme",
+  "devDependencies": {
+    "sass": "^1.43.4"
+  }
+}
