@@ -2,8 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 * {
-  box-sizing: inherit;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -16,23 +15,5 @@ body {
   align-items: center;
   background: $color-background;
   color: $color-text;
-  display: flex;
-  flex-direction: column;
   font-family: 'Nunito', sans-serif;
-  font-weight: 400;
-  height: 100vh;
-  justify-content: space-evenly;
-}
-
-main {
-  backdrop-filter: blur(200px);
-  background-color: rgba(255, 255, 255, 0.35);
-  border-radius: 9px;
-  box-shadow: 0 32px 80px rgba(0, 0, 0, 0.25);
-  display: flex;
-  filter: blur();
-  height: 600px;
-  overflow: hidden;
-  position: relative;
-  width: 1000px;
 }

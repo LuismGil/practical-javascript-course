@@ -1,14 +1,18 @@
-const input = document.getElementById('squareInput')
-const value = input.value;
-
 // Square code
 
-const btn = document.getElementById('btnSquare');
+const btn = document.getElementById('squareBtn');
 
 btn.addEventListener('click',function() {
+  const input = document.getElementById('squareInput')
+  const value = input.value;
   const perimeter = squarePerimeter(value);
+  console.log('perimetro = ', perimeter );
   const area = squareArea(value);
+  const resultSquare = document.getElementById('squareResult')
+  resultSquare.innerHTML = `The perimeter is: ${perimeter}\ and the area is: ${area}`
+  console.log('Area = ', area);
   console.log('Perimetro => ' + perimeter + ' Area => ' + area);
+  
 })
 
 

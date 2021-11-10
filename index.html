@@ -13,17 +13,23 @@
     <h1 class="geometric__title">
       Geometric Shapes
     </h1>
+    <img src="src/assets/images/geometricShapes.png" alt="geometric shapes" />
     <p class="geometric__subtitle">
-      This is the first workshop of the practical course of JavaScript
+      Calculate the area and perimeter of the geometric figure of your choice.
     </p>
   </header>
 
+
   <section class="section">
+    <img src="src/assets/images/square.png" alt="square" />
     <h2 class="section__title">
       Calculate the area and perimeter of a square
     </h2>
     
     <form class="section__form">
+      <div id="squareResult">
+
+      </div>
       <label for="squareInput" class="section__form__label">
         Write how long each side of your square is
       </label>
@@ -33,16 +39,78 @@
           class="section__form__container__inputs"
         />
         <button
-          id="btnSquare"
+          id="squareBtn"
           type="button"
           class="section__form__container__buttons"
         >
           Calculate the perimeter and area
         </button>
     </form>
-    <div class="resultados">
-      <p>hola</p>
-    </div>
+  </section>
+  <section class="section">
+    <img src="src/assets/images/triangle.png" alt="triangle" />
+    <h2 class="section__title">
+      Calculate the area and perimeter of a triangle
+    </h2>
+    <form>
+      <label>Escribe cuánto mide cada uno de los lados del triángulo en centímetros y su
+        altura.</label>
+      <div>
+        <input
+        id="triangleA"
+        type="number"
+        placeholder="Side A"
+        >
+        <input
+          id="triangleB" 
+          type="number" 
+          placeholder="Side B"
+        >
+        <input
+          id="triangleBase" 
+          type="number" 
+          placeholder="Base">
+        <input
+          id="triangleHeitght" 
+          type="number"
+          placeholder="Height"
+        >
+      </div>
+      <button
+      type="button"
+      id="triangleBtn"
+      >
+        Calculate the perimeter and area
+      </button>
+    </form>
+  </section>
+  <section class="section">
+    <img src="src/assets/images/circle.png" alt="circle" />
+    <h2 class="section__title">
+      Wait for the information only structure
+    </h2>
+    <form>
+      <label>Test circle not yet</label>
+      <div>
+        <input
+        type="number"
+        >
+        <input
+          type="number" 
+        >
+        <input
+          type="number" >
+        <input
+          type="number"
+        >
+      </div>
+      <button
+      type="button"
+      id="circleBtn"
+      >
+        Test circle
+      </button>
+    </form>
   </section>
 
   <script src="./src/components/shapes.js"></script>
