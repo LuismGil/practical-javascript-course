@@ -39,11 +39,18 @@
           class="section__form__container__inputs"
         />
         <button
-          id="squareBtn"
+          id="squareBtnPerimeter"
           type="button"
           class="section__form__container__buttons"
         >
-          Calculate the perimeter and area
+          Get Perimeter
+        </button>
+        <button
+          id="squareBtnArea"
+          type="button"
+          class="section__form__container__buttons"
+        >
+          Get Area
         </button>
     </form>
   </section>
@@ -53,8 +60,10 @@
       Calculate the area and perimeter of a triangle
     </h2>
     <form>
-      <label>Escribe cuánto mide cada uno de los lados del triángulo en centímetros y su
-        altura.</label>
+      <div id="triangleResult">
+
+      </div>
+      <label>Write how long each side of your triangle is</label>
       <div>
         <input
         id="triangleA"
@@ -71,16 +80,22 @@
           type="number" 
           placeholder="Base">
         <input
-          id="triangleHeitght" 
+          id="triangleHeight" 
           type="number"
           placeholder="Height"
         >
       </div>
       <button
       type="button"
-      id="triangleBtn"
+      id="triangleBtnPerimeter"
       >
-        Calculate the perimeter and area
+        Get Perimeter
+      </button>
+      <button
+      type="button"
+      id="triangleBtnArea"
+      >
+        Get Area
       </button>
     </form>
   </section>
@@ -90,25 +105,27 @@
       Wait for the information only structure
     </h2>
     <form>
-      <label>Test circle not yet</label>
+      <div id="circleResult">
+
+      </div>
+      <label>write how long is the radius of your circle</label>
       <div>
         <input
+        id='inputCircle'
         type="number"
-        >
-        <input
-          type="number" 
-        >
-        <input
-          type="number" >
-        <input
-          type="number"
         >
       </div>
       <button
       type="button"
-      id="circleBtn"
+      id="circleBtnPerimeter"
       >
-        Test circle
+        Get Perimeter
+      </button>
+      <button
+      type="button"
+      id="circleBtnArea"
+      >
+        Get Area
       </button>
     </form>
   </section>
