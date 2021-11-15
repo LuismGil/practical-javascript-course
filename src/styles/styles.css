@@ -14,8 +14,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #fbfcfe;
-  color: #23478d;
+  background: #eae7fa;
+  color: #2e1d8b;
   font-family: 'Nunito', sans-serif;
 }
 
@@ -24,8 +24,8 @@ body {
 }
 
 .geometric img {
-  width: 80px;
   height: 80px;
+  width: 80px;
 }
 
 .geometric__title {
@@ -37,18 +37,63 @@ body {
   font-size: 17px;
   line-height: 32px;
   margin: 10px;
+  text-transform: capitalize;
 }
 
 .section {
+  border: 1px solid #735CDD;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 350px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 10px auto;
   width: 250px;
-  height: 280px;
-  border: 1px solid black;
+}
+
+.section__title {
+  margin: 5px 10px;
+  text-align: center;
 }
 
 img {
-  margin: 10px auto;
   display: block;
+  height: 70px;
+  margin: 0 auto;
+  width: 70px;
+}
+
+.form {
+  text-align: center;
+}
+
+.form__results {
+  background: #bbb0ef;
+  border: 1px solid #735CDD;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 5px auto;
+  text-transform: capitalize;
+  width: 200px;
+}
+
+.form__inputs {
+  border-radius: 5px;
+  margin: 5px 0;
+  width: 200px;
+}
+
+.form__buttons {
+  background-color: #bbb0ef;
+  border-radius: 5px;
+  height: 30px;
   width: 100px;
-  height: 100px;
 }
 /*# sourceMappingURL=styles.css.map */

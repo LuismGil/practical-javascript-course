@@ -2,31 +2,69 @@
   text-align: center;
   
   img {
-    width: 80px;
     height: 80px;
+    width: 80px;
   }
   
   &__title {
     font-size: 24px;
     margin-top: 15px;
   }
-
+  
   &__subtitle {
     font-size: 17px;
     line-height: 32px;
     margin: 10px;
+    text-transform: capitalize;
     }
 }
 
 .section {
+  border: 1px solid $secundary;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  justify-content: space-evenly;
+  margin: 10px auto;
   width: 250px;
-  height: 280px;
-  border: 1px solid black;
+
+  &__title {
+    margin: 5px 10px;
+    text-align: center;
+  }
 }
 
 img {
-  margin: 10px auto;
   display: block;
-  width: 100px;
-  height: 100px;
+  height: 70px;
+  margin: 0 auto;
+  width: 70px;
+}
+
+.form {
+  text-align: center;
+
+  &__results {
+    background: lighten($secundary, 20%);
+    border: 1px solid $secundary;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 5px auto;
+    text-transform: capitalize;
+    width: 200px;
+  }
+
+  &__inputs {
+    border-radius: 5px;
+    margin: 5px 0;
+    width: 200px;
+  }
+
+  &__buttons {
+    background-color: lighten($secundary, 20%);
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+  }
 }

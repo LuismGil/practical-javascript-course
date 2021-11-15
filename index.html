@@ -23,32 +23,36 @@
   <section class="section">
     <img src="src/assets/images/square.png" alt="square" />
     <h2 class="section__title">
-      Calculate the area and perimeter of a square
+      Calculate the area and perimeter of a Square
     </h2>
     
-    <form class="section__form">
-      <div id="squareResult">
+    <form class="form">
+      <div
+       id="squareResult"
+       class="form__results"
+      >
 
       </div>
-      <label for="squareInput" class="section__form__label">
+      <label for="squareInput" class="form__label">
         Write how long each side of your square is
       </label>
         <input
           id="squareInput"
           type="number"
-          class="section__form__container__inputs"
+          class="form__inputs"
+          placeholder="Base"
         />
         <button
           id="squareBtnPerimeter"
           type="button"
-          class="section__form__container__buttons"
+          class="form__buttons"
         >
           Get Perimeter
         </button>
         <button
           id="squareBtnArea"
           type="button"
-          class="section__form__container__buttons"
+          class="form__buttons"
         >
           Get Area
         </button>
@@ -57,10 +61,13 @@
   <section class="section">
     <img src="src/assets/images/triangle.png" alt="triangle" />
     <h2 class="section__title">
-      Calculate the area and perimeter of a triangle
+      Calculate the area and perimeter of a Triangle
     </h2>
-    <form>
-      <div id="triangleResult">
+    <form class="form">
+      <div 
+        id="triangleResult"
+        class="form__results"
+      >
 
       </div>
       <label>Write how long each side of your triangle is</label>
@@ -69,31 +76,38 @@
         id="triangleA"
         type="number"
         placeholder="Side A"
+        class="form__inputs"
         >
         <input
           id="triangleB" 
           type="number" 
           placeholder="Side B"
+          class="form__inputs"
         >
         <input
           id="triangleBase" 
           type="number" 
-          placeholder="Base">
+          placeholder="Base"
+          class="form__inputs"
+          >
         <input
           id="triangleHeight" 
           type="number"
           placeholder="Height"
+          class="form__inputs"
         >
       </div>
       <button
       type="button"
       id="triangleBtnPerimeter"
+      class="form__buttons"
       >
         Get Perimeter
       </button>
       <button
       type="button"
       id="triangleBtnArea"
+      class="form__buttons"
       >
         Get Area
       </button>
@@ -102,28 +116,35 @@
   <section class="section">
     <img src="src/assets/images/circle.png" alt="circle" />
     <h2 class="section__title">
-      Wait for the information only structure
+      Calculate the area and perimeter of a Circle
     </h2>
-    <form>
-      <div id="circleResult">
+    <form class="form">
+      <div 
+        id="circleResult"
+        class="form__results"
+      >
 
       </div>
-      <label>write how long is the radius of your circle</label>
+      <label>Write how long is the radius of your circle</label>
       <div>
         <input
         id='inputCircle'
         type="number"
+        placeholder="Radius"
+        class="form__inputs"
         >
       </div>
       <button
       type="button"
       id="circleBtnPerimeter"
+      class="form__buttons"
       >
         Get Perimeter
       </button>
       <button
       type="button"
       id="circleBtnArea"
+      class="form__buttons"
       >
         Get Area
       </button>
