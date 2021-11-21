@@ -40,7 +40,7 @@ body {
   text-transform: capitalize;
 }
 
-.section {
+.card {
   border: 1px solid #735CDD;
   border-radius: 5px;
   display: -webkit-box;
@@ -51,16 +51,47 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 350px;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
   margin: 10px auto;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
   width: 250px;
 }
 
-.section__title {
-  margin: 5px 10px;
+.card__title {
+  margin: 15px 10px;
   text-align: center;
+}
+
+.card__results {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 5px auto;
+  padding: 10px;
+  text-transform: capitalize;
+  width: 200px;
+}
+
+.card__inputs {
+  border-radius: 5px;
+  margin: 5px 0;
+  width: 200px;
+}
+
+.card__button {
+  background-color: #bbb0ef;
+  border-radius: 5px;
+  height: 30px;
+  width: 100px;
+}
+
+.card__buttons {
+  bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  width: 100%;
 }
 
 img {
@@ -70,30 +101,37 @@ img {
   width: 70px;
 }
 
-.form {
-  text-align: center;
+#squareInput, #inputCircle {
+  margin: 50px auto 0;
 }
 
-.form__results {
-  background: #bbb0ef;
-  border: 1px solid #735CDD;
-  font-size: 15px;
-  font-weight: bold;
-  margin: 5px auto;
-  text-transform: capitalize;
-  width: 200px;
+@media (min-width: 768px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  label {
+    font-size: 11px;
+  }
 }
 
-.form__inputs {
-  border-radius: 5px;
-  margin: 5px 0;
-  width: 200px;
-}
-
-.form__buttons {
-  background-color: #bbb0ef;
-  border-radius: 5px;
-  height: 30px;
-  width: 100px;
+@media (min-width: 1024px) {
+  .geometric img {
+    height: 100px;
+    width: 100px;
+  }
+  .geometric__title {
+    font-size: 30px;
+    margin-top: 30px;
+  }
+  .card {
+    height: 370px;
+    width: 300px;
+  }
+  img {
+    height: 85px;
+    width: 85px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

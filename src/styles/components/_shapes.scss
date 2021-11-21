@@ -1,6 +1,6 @@
 .geometric {
   text-align: center;
-  
+ 
   img {
     height: 80px;
     width: 80px;
@@ -19,38 +19,28 @@
     }
 }
 
-.section {
+.card {
   border: 1px solid $secundary;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   height: 350px;
-  justify-content: space-evenly;
   margin: 10px auto;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
   width: 250px;
 
   &__title {
-    margin: 5px 10px;
+    margin: 15px 10px;
     text-align: center;
   }
-}
-
-img {
-  display: block;
-  height: 70px;
-  margin: 0 auto;
-  width: 70px;
-}
-
-.form {
-  text-align: center;
 
   &__results {
-    background: lighten($secundary, 20%);
-    border: 1px solid $secundary;
     font-size: 15px;
     font-weight: bold;
     margin: 5px auto;
+    padding: 10px;
     text-transform: capitalize;
     width: 200px;
   }
@@ -61,10 +51,62 @@ img {
     width: 200px;
   }
 
-  &__buttons {
+  &__button {
     background-color: lighten($secundary, 20%);
     border-radius: 5px;
     height: 30px;
     width: 100px;
+  }
+
+  &__buttons {
+    bottom: 20px;
+    display: flex;
+    position: absolute;
+    width: 100%;
+  }
+}
+
+img {
+  display: block;
+  height: 70px;
+  margin: 0 auto;
+  width: 70px;
+}
+
+#squareInput, #inputCircle {
+  margin: 50px auto 0;
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+  }
+
+  label {
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .geometric {
+    img {
+      height: 100px;
+      width: 100px;
+    }
+    
+    &__title {
+      font-size: 30px;
+      margin-top: 30px;
+    }
+  }
+
+  .card {
+    height: 370px;
+    width: 300px;
+  }
+  
+  img {
+    height: 85px;
+    width: 85px;
   }
 }

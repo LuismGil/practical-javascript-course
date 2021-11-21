@@ -19,136 +19,136 @@
     </p>
   </header>
 
-
-  <section class="section">
-    <img src="src/assets/images/square.png" alt="square" />
-    <h2 class="section__title">
-      Calculate the area and perimeter of a Square
-    </h2>
-    
-    <form class="form">
+  <section class="container">
+    <div class="card">
+      <img src="src/assets/images/square.png" alt="square" />
+      <h2 class="card__title">
+        Calculate the area and perimeter of a Square
+      </h2>
       <div
-       id="squareResult"
-       class="form__results"
+        id="squareResult"
+        class="card__results"
       >
-
       </div>
-      <label for="squareInput" class="form__label">
+      <label for="squareInput" class="card__label">
         Write how long each side of your square is
       </label>
+      <div>
         <input
           id="squareInput"
           type="number"
-          class="form__inputs"
+          class="card__inputs"
           placeholder="Base"
         />
+      </div>
+      <div class="card__buttons">
         <button
           id="squareBtnPerimeter"
           type="button"
-          class="form__buttons"
+          class="card__button"
         >
           Get Perimeter
         </button>
         <button
           id="squareBtnArea"
           type="button"
-          class="form__buttons"
+          class="card__button"
         >
           Get Area
         </button>
-    </form>
-  </section>
-  <section class="section">
-    <img src="src/assets/images/triangle.png" alt="triangle" />
-    <h2 class="section__title">
-      Calculate the area and perimeter of a Triangle
-    </h2>
-    <form class="form">
+      </div>
+    </div>
+    <div class="card">
+      <img src="src/assets/images/triangle.png" alt="triangle" />
+      <h2 class="card__title">
+        Calculate the area and perimeter of a Triangle
+      </h2>
       <div 
         id="triangleResult"
-        class="form__results"
+        class="card__results"
       >
-
       </div>
       <label>Write how long each side of your triangle is</label>
       <div>
         <input
-        id="triangleA"
-        type="number"
-        placeholder="Side A"
-        class="form__inputs"
+          id="triangleA"
+          type="number"
+          placeholder="Side A"
+          class="card__inputs"
         >
         <input
           id="triangleB" 
           type="number" 
           placeholder="Side B"
-          class="form__inputs"
+          class="card__inputs"
         >
         <input
           id="triangleBase" 
           type="number" 
           placeholder="Base"
-          class="form__inputs"
+          class="card__inputs"
           >
         <input
           id="triangleHeight" 
           type="number"
           placeholder="Height"
-          class="form__inputs"
+          class="card__inputs"
         >
       </div>
-      <button
-      type="button"
-      id="triangleBtnPerimeter"
-      class="form__buttons"
-      >
-        Get Perimeter
-      </button>
-      <button
-      type="button"
-      id="triangleBtnArea"
-      class="form__buttons"
-      >
-        Get Area
-      </button>
-    </form>
-  </section>
-  <section class="section">
-    <img src="src/assets/images/circle.png" alt="circle" />
-    <h2 class="section__title">
-      Calculate the area and perimeter of a Circle
-    </h2>
-    <form class="form">
-      <div 
-        id="circleResult"
-        class="form__results"
-      >
+      <div class="card__buttons">
+        <button
+          type="button"
+          id="triangleBtnPerimeter"
+          class="card__button"
+        >
+          Get Perimeter
+        </button>
+        <button
+          type="button"
+          id="triangleBtnArea"
+          class="card__button"
+        >
+          Get Area
+        </button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="src/assets/images/circle.png" alt="circle" />
+      <h2 class="card__title">
+        Calculate the area and perimeter of a Circle
+      </h2>
+        <div 
+          id="circleResult"
+          class="card__results"
+        >
+        </div>
+        <label>Write how long is the radius of your circle</label>
+        <div>
+          <input
+            id='inputCircle'
+            type="number"
+            placeholder="Radius"
+            class="card__inputs"
+          >
+        </div>
+        <div class="card__buttons">
+          <button
+            type="button"
+            id="circleBtnPerimeter"
+            class="card__button"
+          >
+          Get Perimeter
+          </button>
+          <button
+            type="button"
+            id="circleBtnArea"
+            class="card__button"
+          >
+          Get Area
+        </button>
+      </div>
 
-      </div>
-      <label>Write how long is the radius of your circle</label>
-      <div>
-        <input
-        id='inputCircle'
-        type="number"
-        placeholder="Radius"
-        class="form__inputs"
-        >
-      </div>
-      <button
-      type="button"
-      id="circleBtnPerimeter"
-      class="form__buttons"
-      >
-        Get Perimeter
-      </button>
-      <button
-      type="button"
-      id="circleBtnArea"
-      class="form__buttons"
-      >
-        Get Area
-      </button>
-    </form>
+    </div>
   </section>
 
   <script src="./src/components/shapes.js"></script>
