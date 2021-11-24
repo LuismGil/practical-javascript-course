@@ -16,7 +16,7 @@ btnSquareArea.addEventListener('click',function() {
   const valueSquareArea = inputSquare.value;
   const areaSquare = squareArea(valueSquareArea);
 
-  resultSquare.innerHTML = `The Area is: ${areaSquare}`;
+  resultSquare.innerHTML = `The Area is: ${areaSquare} cm²`;
 })
 
 function squarePerimeter(side) {
