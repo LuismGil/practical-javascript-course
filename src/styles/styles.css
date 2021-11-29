@@ -53,6 +53,10 @@ body {
   border: 1px solid black;
 }
 
+.main__card a {
+  text-decoration: none;
+}
+
 @media (min-width: 1024px) {
   .main__nav ul li {
     font-size: 20px;
