@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 * {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
 }
 
@@ -17,6 +17,47 @@ body {
   background: #eae7fa;
   color: #2e1d8b;
   font-family: 'Nunito', sans-serif;
+}
+
+.main__nav {
+  margin: 0 auto;
+  width: 95%;
+}
+
+.main__nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.main__nav ul li {
+  font-size: 15px;
+  list-style: none;
+  margin: 10px;
+}
+
+.main__nav ul li a {
+  text-decoration: none;
+}
+
+.main__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main__card {
+  border: 1px solid black;
+}
+
+@media (min-width: 1024px) {
+  .main__nav ul li {
+    font-size: 20px;
+    margin: 15px;
+  }
 }
 
 .geometric {
@@ -90,6 +131,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   position: absolute;
   width: 100%;
 }
