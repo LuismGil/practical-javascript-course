@@ -43,24 +43,76 @@ body {
   text-decoration: none;
 }
 
+.main__nav ul li a:link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.main__nav ul li a:hover {
+  color: #b49fcc;
+}
+
+.main__nav ul li a:visited {
+  color: #dfcbfa;
+}
+
+.main__nav ul li a:active {
+  color: #1f7a8c;
+}
+
 .main__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .main__card {
   border: 1px solid black;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 350px;
+  margin: 10px auto;
+  text-align: center;
+  padding: 20px 0;
+  width: 250px;
 }
 
 .main__card a {
   text-decoration: none;
 }
 
+@media (min-width: 768px) {
+  .main__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .main__card {
+    width: 180px;
+  }
+}
+
 @media (min-width: 1024px) {
   .main__nav ul li {
     font-size: 20px;
     margin: 15px;
+  }
+  .main__card {
+    width: 280px;
   }
 }
 
