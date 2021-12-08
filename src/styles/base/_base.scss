@@ -15,8 +15,24 @@ body {
   align-items: center;
   background: $color-background;
   color: $color-text;
-  font-family: 'Nunito', sans-serif;
-  
+  font-family: 'Nunito', sans-serif; 
+}
+
+a:link {
+  color: darken($secundary, 20%);
+  text-decoration: none;
+}
+
+a:hover {
+  color: darken($secundary, 20%);
+}
+
+a:visited {
+  color: ligthen($secundary, 5%);
+}
+
+a:active {
+  color: darken($secundary, 30%);
 }
 
 .main {
@@ -37,23 +53,6 @@ body {
         a {
           text-decoration: none;
         }
-        
-        a:link {
-          color: #fff;
-          text-decoration: none;
-        }
-        
-        a:hover {
-          color: #b49fcc;
-        }
-        
-        a:visited {
-          color: #dfcbfa;
-        }
-        
-        a:active {
-          color: #1f7a8c;
-        }
       }
     }
   }
@@ -69,10 +68,18 @@ body {
     display: flex;
     flex-direction: column;
     height: 350px;
+    justify-content: center;
     margin: 10px auto;
     text-align: center;
     padding: 20px 0;
     width: 250px;
+
+    img {
+      display: block;
+      height: 180px;
+      margin: 25px auto 0;
+      width: 180px;
+    }
 
     a {
       text-decoration: none;

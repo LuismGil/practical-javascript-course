@@ -31,6 +31,13 @@
   position: relative;
   width: 250px;
 
+  img {
+    display: block;
+    height: 70px;
+    margin: 0 auto;
+    width: 70px;
+  }
+
   &__title {
     margin: 15px 10px;
     text-align: center;
@@ -65,13 +72,6 @@
     position: absolute;
     width: 100%;
   }
-}
-
-img {
-  display: block;
-  height: 70px;
-  margin: 0 auto;
-  width: 70px;
 }
 
 #squareInput, #inputCircle {

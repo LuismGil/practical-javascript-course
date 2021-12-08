@@ -19,6 +19,23 @@ body {
   font-family: 'Nunito', sans-serif;
 }
 
+a:link {
+  color: #3d24af;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #3d24af;
+}
+
+a:visited {
+  color: ligthen(#735CDD, 5%);
+}
+
+a:active {
+  color: #2e1c84;
+}
+
 .main__nav {
   margin: 0 auto;
   width: 95%;
@@ -43,23 +60,6 @@ body {
   text-decoration: none;
 }
 
-.main__nav ul li a:link {
-  color: #fff;
-  text-decoration: none;
-}
-
-.main__nav ul li a:hover {
-  color: #b49fcc;
-}
-
-.main__nav ul li a:visited {
-  color: #dfcbfa;
-}
-
-.main__nav ul li a:active {
-  color: #1f7a8c;
-}
-
 .main__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -81,10 +81,20 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 350px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 10px auto;
   text-align: center;
   padding: 20px 0;
   width: 250px;
+}
+
+.main__card img {
+  display: block;
+  height: 180px;
+  margin: 25px auto 0;
+  width: 180px;
 }
 
 .main__card a {
@@ -155,6 +165,13 @@ body {
   width: 250px;
 }
 
+.card img {
+  display: block;
+  height: 70px;
+  margin: 0 auto;
+  width: 70px;
+}
+
 .card__title {
   margin: 15px 10px;
   text-align: center;
@@ -192,13 +209,6 @@ body {
           justify-content: space-evenly;
   position: absolute;
   width: 100%;
-}
-
-img {
-  display: block;
-  height: 70px;
-  margin: 0 auto;
-  width: 70px;
 }
 
 #squareInput, #inputCircle {
